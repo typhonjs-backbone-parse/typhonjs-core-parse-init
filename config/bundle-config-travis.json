@@ -8,7 +8,7 @@
          "formats": ["amd"],
          "mangle": false,
          "minify": false,
-         "src": "test/fixture/maintest.js - [jquery] - [underscore]",
+         "src": "test/fixture/maintest.js",
          "extraConfig": "test/fixture/config-app-paths.js"
       }
    ]
