@@ -1,0 +1,28 @@
+{
+  "name": "typhon-core-parse-init",
+  "version": "0.1.0",
+  "homepage": "http://js.typhonrt.org/",
+  "description": "TyphonJS Core Parse",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/typhonjs/typhon-core-parse-init/typhon-core-parse.git"
+  },
+  "jspm": {
+    "main": "src/lifecycle/ParseInitialize.js",
+    "dependencies": {
+      "parse": "npm:parse@^1.6.8"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.25",
+      "babel-runtime": "npm:babel-runtime@^5.8.25",
+      "core-js": "npm:core-js@^1.2.1"
+    }
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "jspm": "^0.16.14",
+    "typhon-config-eslint-es6": "^0.1.0",
+    "typhon-core-gulptasks": "^0.1.0"
+  }
+}
