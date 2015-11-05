@@ -33,3 +33,20 @@ export default {
    parseAPIKey: '<API KEY>'
 };
 ```
+
+Include typhonjs-core-parse-init as a dependency in the `jspm` entry in package.json:
+```
+  "jspm": {
+    "dependencies": {
+      "parseinit": "github:typhonjs/typhonjs-core-parse-init@master"
+    },
+    "devDependencies": {
+      ...    
+    }
+  },
+```
+
+Then in the main app entry point and any other modules which may use the Parse API during import resolution simply include:
+```
+import 'parseinit'
+```
