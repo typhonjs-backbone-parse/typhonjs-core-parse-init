@@ -1,5 +1,5 @@
 {
-   "title": "typhon-core-parse-init",
+   "title": "typhonjs-core-parse-init",
    "source": "src",
    "destination": "docs"
 }
