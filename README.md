@@ -1,7 +1,7 @@
 ![typhonjs-core-parse-init](http://i.imgur.com/DRT8riA.png)
 
 [![Code Style](https://img.shields.io/badge/code%20style-allman-yellowgreen.svg?style=flat)](https://en.wikipedia.org/wiki/Indent_style#Allman_style)
-[![License](https://img.shields.io/badge/license-MIT-yellowgreen.svg?style=flat)](https://github.com/typhonjs/backbone-parse-es6/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-yellowgreen.svg?style=flat)](https://github.com/typhonjs/typhonjs-core-parse-init/blob/master/LICENSE)
 
 [![Build Status](https://travis-ci.org/typhonjs/typhonjs-core-parse-init.svg?branch=master)](https://travis-ci.org/typhonjs/typhonjs-core-parse-init)
 [![Dependency Status](https://www.versioneye.com/user/projects/563b0ca31d47d40020000931/badge.svg?style=flat)](https://www.versioneye.com/user/projects/563b0ca31d47d40020000931)
