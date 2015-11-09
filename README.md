@@ -39,6 +39,7 @@ Include typhonjs-core-parse-init as a dependency in the `jspm` entry in package.
 ```
   "jspm": {
     "dependencies": {
+      "parse": "npm:parse@^1.6.8",
       "parseinit": "github:typhonjs/typhonjs-core-parse-init@master"
     },
     "devDependencies": {
