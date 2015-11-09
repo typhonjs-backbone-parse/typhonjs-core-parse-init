@@ -11,12 +11,12 @@
   "jspm": {
     "main": "src/lifecycle/ParseInitialize.js",
     "dependencies": {
-      "parse": "npm:parse@^1.6.8"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.25",
       "babel-runtime": "npm:babel-runtime@^5.8.25",
-      "core-js": "npm:core-js@^1.2.1"
+      "core-js": "npm:core-js@^1.2.1",
+      "parse": "npm:parse@^1.6.8"
     }
   },
   "devDependencies": {
