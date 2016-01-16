@@ -15,11 +15,11 @@
 
 <header>
   <a href="./">Home</a>
-  
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
   <a href="identifiers.html">Reference</a>
   <a href="source.html">Source</a>
   
-  <a data-ice="repoURL" href="https://github.com/typhonjs/typhon-core-parse-init/typhon-core-parse.git" class="repo-url-github">Repository</a>
+  <a data-ice="repoURL" href="https://github.com/typhonjs-parse/typhon-core-parse-init/typhon-core-parse-init.git" class="repo-url-github">Repository</a>
   <div class="search-box">
   <span>
     <img src="./image/search.png">
@@ -37,12 +37,12 @@
 </nav>
 
 <div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><p><img src="http://i.imgur.com/DRT8riA.png" alt="typhonjs-core-parse-init"></p>
-<p><a href="https://travis-ci.org/typhonjs/typhonjs-core-parse-init"><img src="https://travis-ci.org/typhonjs/typhonjs-core-parse-init.svg?branch=master" alt="Build Status"></a>
-<a href="https://www.versioneye.com/user/projects/563b0ca31d47d40020000931"><img src="https://www.versioneye.com/user/projects/563b0ca31d47d40020000931/badge.svg?style=flat" alt="Dependency Status"></a>
-<a href="https://en.wikipedia.org/wiki/Indent_style#Allman_style"><img src="https://img.shields.io/badge/code%20style-allman-yellowgreen.svg?style=flat" alt="Code Style"></a>
-<a href="https://github.com/typhonjs/backbone-parse-es6/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-yellowgreen.svg?style=flat" alt="License"></a></p>
-<p>Provides a minimal module for <a href="http://jspm.io">JSPM</a> / <a href="https://github.com/systemjs/systemjs">SystemJS</a> to initialize the <a href="http://www.parse.com">Parse JS API</a> from a user mapped object <code>parseconfig</code>. Due to ES6 hoisting imports and SystemJS Builder static bundling it is necessary to import <code>parseinit</code> which is mapped to this module to ensure that the Parse API has been initialized before usage for modules which might access the Parse API during initialization of TyphonJS and other projects depending on <a href="https://github.com/typhonjs/backbone-parse-es6">backbone-parse-es6</a>. </p>
-<p>For a demo of usage of typhonjs-core-parse-init please see <a href="">backbone-parse-es6-demo</a>. </p>
+<p><a href="https://en.wikipedia.org/wiki/Indent_style#Allman_style"><img src="https://img.shields.io/badge/code%20style-allman-yellowgreen.svg?style=flat" alt="Code Style"></a>
+<a href="https://github.com/typhonjs/typhonjs-core-parse-init/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-yellowgreen.svg?style=flat" alt="License"></a></p>
+<p><a href="https://travis-ci.org/typhonjs-parse/typhonjs-core-parse-init"><img src="https://travis-ci.org/typhonjs-parse/typhonjs-core-parse-init.svg?branch=master" alt="Build Status"></a>
+<a href="https://www.versioneye.com/user/projects/568e365e9c1b9802eb000001"><img src="https://www.versioneye.com/user/projects/568e365e9c1b9802eb000001/badge.svg?style=flat" alt="Dependency Status"></a></p>
+<p>Provides a minimal module for <a href="http://jspm.io">JSPM</a> / <a href="https://github.com/systemjs/systemjs">SystemJS</a> to initialize the <a href="http://www.parse.com">Parse JS API</a> from a user mapped object <code>parseconfig</code>. Due to ES6 hoisting imports and SystemJS Builder static bundling it is necessary to import <code>parseinit</code> which is mapped to this module to ensure that the Parse API has been initialized before usage for modules which might access the Parse API during initialization of TyphonJS and other projects depending on <a href="https://github.com/typhonjs-parse/backbone-parse-es6">backbone-parse-es6</a>. </p>
+<p>For a demo of usage of typhonjs-core-parse-init please see <a href="https://github.com/typhonjs-demos/backbone-parse-es6-todos">backbone-parse-es6-todos</a>. </p>
 <p>For configuration please supply a user mapped path in a JSPM configuration file such as the following:</p>
 <pre><code><code class="source-code prettyprint">System.config(
 {
@@ -64,14 +64,15 @@ export default {
 </code></pre><p>Include typhonjs-core-parse-init as a dependency in the <code>jspm</code> entry in package.json:</p>
 <pre><code><code class="source-code prettyprint">  &quot;jspm&quot;: {
     &quot;dependencies&quot;: {
-      &quot;parseinit&quot;: &quot;github:typhonjs/typhonjs-core-parse-init@master&quot;
+      &quot;parse&quot;: &quot;npm:parse@^1.6.14&quot;,
+      &quot;typhonjs-core-parse-init&quot;: &quot;github:typhonjs/typhonjs-core-parse-init@master&quot;
     },
     &quot;devDependencies&quot;: {
       ...    
     }
   },</code>
 </code></pre><p>Then in the main app entry point and any other modules which may use the Parse API during import resolution simply include:</p>
-<pre><code><code class="source-code prettyprint">import &apos;parseinit&apos;</code>
+<pre><code><code class="source-code prettyprint">import &apos;typhonjs-core-parse-init&apos;</code>
 </code></pre></div>
 </div>
 
