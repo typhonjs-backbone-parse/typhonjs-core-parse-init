@@ -6,9 +6,9 @@
 [![Build Status](https://travis-ci.org/typhonjs-parse/typhonjs-core-parse-init.svg?branch=master)](https://travis-ci.org/typhonjs-parse/typhonjs-core-parse-init)
 [![Dependency Status](https://www.versioneye.com/user/projects/568e365e9c1b9802eb000001/badge.svg?style=flat)](https://www.versioneye.com/user/projects/568e365e9c1b9802eb000001)
 
-Provides a minimal module for [JSPM](http://jspm.io) / [SystemJS](https://github.com/systemjs/systemjs) to initialize the [Parse JS API](http://www.parse.com) from a user mapped object `parseconfig`. Due to ES6 hoisting imports and SystemJS Builder static bundling it is necessary to import `parseinit` which is mapped to this module to ensure that the Parse API has been initialized before usage for modules which might access the Parse API during initialization of TyphonJS and other projects depending on [backbone-parse-es6](https://github.com/typhonjs/backbone-parse-es6). 
+Provides a minimal module for [JSPM](http://jspm.io) / [SystemJS](https://github.com/systemjs/systemjs) to initialize the [Parse JS API](http://www.parse.com) from a user mapped object `parseconfig`. Due to ES6 hoisting imports and SystemJS Builder static bundling it is necessary to import `parseinit` which is mapped to this module to ensure that the Parse API has been initialized before usage for modules which might access the Parse API during initialization of TyphonJS and other projects depending on [backbone-parse-es6](https://github.com/typhonjs-parse/backbone-parse-es6). 
 
-For a demo of usage of typhonjs-core-parse-init please see [backbone-parse-es6-demo](). 
+For a demo of usage of typhonjs-core-parse-init please see [backbone-parse-es6-todos](https://github.com/typhonjs-demos/backbone-parse-es6-todos). 
 
 For configuration please supply a user mapped path in a JSPM configuration file such as the following:
 ```
@@ -39,8 +39,8 @@ Include typhonjs-core-parse-init as a dependency in the `jspm` entry in package.
 ```
   "jspm": {
     "dependencies": {
-      "parse": "npm:parse@^1.6.8",
-      "parseinit": "github:typhonjs/typhonjs-core-parse-init@master"
+      "parse": "npm:parse@^1.6.14",
+      "typhonjs-core-parse-init": "github:typhonjs/typhonjs-core-parse-init@master"
     },
     "devDependencies": {
       ...    
@@ -50,5 +50,5 @@ Include typhonjs-core-parse-init as a dependency in the `jspm` entry in package.
 
 Then in the main app entry point and any other modules which may use the Parse API during import resolution simply include:
 ```
-import 'parseinit'
+import 'typhonjs-core-parse-init'
 ```
