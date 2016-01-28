@@ -5,5 +5,6 @@
 
 export default {
    parseAppID: 'THIS IS A TEST APP ID',
-   parseAPIKey: 'THIS IS A TEST API KEY'
+   parseAPIKey: 'THIS IS A TEST API KEY',
+   parseForceBrowser: true
 };

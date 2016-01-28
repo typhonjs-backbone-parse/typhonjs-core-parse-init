@@ -10,6 +10,7 @@
   },
   "jspm": {
     "main": "src/lifecycle/ParseInitialize.js",
+    "format": "cjs",
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.35",
       "babel-runtime": "npm:babel-runtime@^5.8.35",
