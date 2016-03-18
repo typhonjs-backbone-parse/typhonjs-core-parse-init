@@ -1,12 +1,15 @@
 {
   "name": "typhon-core-parse-init",
   "version": "0.1.0",
-  "homepage": "https://github.com/typhonjs-parse/typhon-core-parse-init",
+  "homepage": "https://github.com/typhonjs-backbone-parse/typhon-core-parse-init",
   "description": "Initializes Parse SDK with parameters loaded from a mapped config file (`parseconfig`).",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/typhonjs-parse/typhon-core-parse-init/typhon-core-parse-init.git"
+    "url": "https://github.com/typhonjs-backbone-parse/typhon-core-parse-init/typhon-core-parse-init.git"
+  },
+  "bugs": {
+    "url": "https://github.com/typhonjs-backbone-parse/typhon-core-parse-init/issues"
   },
   "jspm": {
     "main": "src/lifecycle/ParseInitialize.js",
@@ -19,9 +22,10 @@
     }
   },
   "devDependencies": {
-    "gulp": "^3.9.0",
-    "jspm": "^0.16.25",
-    "typhonjs-config-eslint": "^0.2.1",
-    "typhonjs-core-gulptasks": "^0.5.0"
+    "gulp": "^3.0.0",
+    "jspm": "^0.16.0",
+    "typhonjs-config-eslint": "^0.4.0",
+    "typhonjs-core-gulptasks": "^0.6.0",
+    "typhonjs-npm-build-test": "^0.1.0"
   }
 }
