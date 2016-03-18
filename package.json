@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "homepage": "https://github.com/typhonjs-backbone-parse/typhon-core-parse-init",
   "description": "Initializes Parse SDK with parameters loaded from a mapped config file (`parseconfig`).",
-  "license": "MIT",
+  "license": "MPL-2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/typhonjs-backbone-parse/typhon-core-parse-init/typhon-core-parse-init.git"
